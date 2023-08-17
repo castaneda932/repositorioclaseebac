@@ -17,7 +17,12 @@ public class Instantiate_ColorRandom : MonoBehaviour
     {
         listadecubos = new List<GameObject>();
         GameObject gameObject = Instantiate(prefabcube);
-        
+        prefabcube.AddComponent<MeshRenderer>();
+        var MeshRendererMaterial = prefabcube.GetComponent<MeshRenderer>().material;
+        MeshRendererMaterial.color = Color.black;
+
+
+
        
 
     }
