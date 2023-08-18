@@ -5,7 +5,7 @@ using UnityEngine;
 public class Instantiate_ColorRandom : MonoBehaviour
 {
     public GameObject prefabcube;
-    public List<GameObject> listadecubos;
+ 
     public int numcubos = 0;
 
        
@@ -15,11 +15,8 @@ public class Instantiate_ColorRandom : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        listadecubos = new List<GameObject>();
-        GameObject gameObject = Instantiate(prefabcube);
-        prefabcube.AddComponent<MeshRenderer>();
-        var MeshRendererMaterial = prefabcube.GetComponent<MeshRenderer>().material;
-        MeshRendererMaterial.color = Color.black;
+         GameObject gameObject = Instantiate(prefabcube);
+        MeshRenderer color= new Color(Random.value, Random.value, Random.value);
 
 
 
