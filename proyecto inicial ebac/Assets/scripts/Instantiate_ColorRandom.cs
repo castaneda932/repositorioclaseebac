@@ -4,26 +4,26 @@ using UnityEngine;
 
 public class Instantiate_ColorRandom : MonoBehaviour
 {
-    public GameObject prefabcube;
-    
+    public GameObject prefabcube;    
     public int numcubos = 0;
 
-       
+
 
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
         GameObject gameObject = Instantiate(prefabcube);
         prefabcube.AddComponent<MeshRenderer>();
-        var MeshRendererMaterial = prefabcube.GetComponent<MeshRenderer>().material;
-        MeshRendererMaterial.color = Color.black;
+        var meshRendererMaterial = prefabcube.GetComponent<MeshRenderer>().material;
+        meshRendererMaterial.color = new Color(Random.value,Random.value,Random.value); 
 
 
 
-       
+
+
 
     }
 
