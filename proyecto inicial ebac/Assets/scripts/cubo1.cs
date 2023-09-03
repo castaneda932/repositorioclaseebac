@@ -37,7 +37,7 @@ public class cubo1 : MonoBehaviour
         variable1 = true;
         variable2 = false;
 
-        if (variable1 || variable2)
+        if (variable1 && variable2)
         {
             Debug.Log("la variable es verdadera");
             Color c = Color.white;
