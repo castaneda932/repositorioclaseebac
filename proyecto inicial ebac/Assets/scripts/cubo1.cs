@@ -22,7 +22,7 @@ public class cubo1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(variable1);
+        
     }
 
     // Update is called once per frame
@@ -34,6 +34,23 @@ public class cubo1 : MonoBehaviour
 
     private void FixedUpdate()
     {
+        variable1 = true;
+        variable2 = false;
+
+        if (variable1 || variable2)
+        {
+            Debug.Log("la variable es verdadera");
+            Color c = new Color(Random.value, Random.value, Random.value);
+            gameObject.GetComponent<MeshRenderer>().material.color = c;
+        }
+        else
+        {
+            Debug.Log("la variable es falsa");
+        }
+         
         
+        
+
+
     }
 }
