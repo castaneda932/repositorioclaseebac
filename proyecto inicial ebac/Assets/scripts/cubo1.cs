@@ -40,12 +40,15 @@ public class cubo1 : MonoBehaviour
         if (variable1 || variable2)
         {
             Debug.Log("la variable es verdadera");
-            Color c = new Color(Random.value, Random.value, Random.value);
+            Color c = Color.white;
             gameObject.GetComponent<MeshRenderer>().material.color = c;
         }
         else
         {
             Debug.Log("la variable es falsa");
+            Color c = Color.black;
+            gameObject.GetComponent<MeshRenderer>().material.color = c;
+
         }
          
         
