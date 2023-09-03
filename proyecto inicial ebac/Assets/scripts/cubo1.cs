@@ -12,14 +12,27 @@ public class cubo1 : MonoBehaviour
         Color c = new Color(Random.value, Random.value, Random.value);
         gameObject.GetComponent<MeshRenderer>().material.color = c;
     }
+
+    bool variable1;
+    bool variable2;
+    bool variable3;
+    
+   
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        Debug.Log(variable1);
     }
 
     // Update is called once per frame
     void Update()
+    {
+        
+    }
+
+
+    private void FixedUpdate()
     {
         
     }
