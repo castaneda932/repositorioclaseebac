@@ -244,7 +244,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 335403944}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d83a9d5e07466ca42bd9d03ad9ac1d82, type: 3}
   m_Name: 
@@ -310,6 +310,10 @@ PrefabInstance:
     - target: {fileID: 5776067987396050768, guid: dc1559469ecb88a4e829006ea961d705, type: 3}
       propertyPath: m_Name
       value: cubo3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5776067987396050768, guid: dc1559469ecb88a4e829006ea961d705, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5776067987396050769, guid: dc1559469ecb88a4e829006ea961d705, type: 3}
       propertyPath: m_RootOrder
@@ -381,7 +385,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 446209545}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8d300e1c4fd38f44a84d5f1f70add46, type: 3}
   m_Name: 
@@ -412,6 +416,10 @@ PrefabInstance:
     - target: {fileID: 8871413384468897620, guid: 31a4674894575a04399dc83cfc55373b, type: 3}
       propertyPath: m_Name
       value: cubo2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871413384468897620, guid: 31a4674894575a04399dc83cfc55373b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8871413384468897627, guid: 31a4674894575a04399dc83cfc55373b, type: 3}
       propertyPath: m_RootOrder
@@ -577,7 +585,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 944211308}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0f2d46d769d3cb2488bae09b8747c6f5, type: 3}
   m_Name: 
@@ -796,6 +804,10 @@ PrefabInstance:
     - target: {fileID: 7946958376035689434, guid: bdc3d130e36450c4c8b4592208c8178b, type: 3}
       propertyPath: m_Name
       value: cubo
+      objectReference: {fileID: 0}
+    - target: {fileID: 7946958376035689434, guid: bdc3d130e36450c4c8b4592208c8178b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bdc3d130e36450c4c8b4592208c8178b, type: 3}
