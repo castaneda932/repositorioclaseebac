@@ -18,12 +18,6 @@ public class EjerciciosVariablesMod8 : MonoBehaviour
 
     private void Start()
     {
-        float numeroFlotante = 3.14161516145f;
-        string cadenaConPrecision = numeroFlotante.ToString("F4");
-        Debug.Log("Numero flotante convertido a cadena con cuatro decimales de precision:" + cadenaConPrecision);
-
-
-
 
         float variable1 = 10.5f;
         float variable2 = 3.75f;
@@ -47,11 +41,31 @@ public class EjerciciosVariablesMod8 : MonoBehaviour
                 gameObject.GetComponent<Renderer>().material.color = Color.yellow;
                 break;
 
-
-
-
-
         }
+        float numeroFlotante = 3.14161516145f;
+        string cadenaConPrecision = numeroFlotante.ToString("F4");
+        Debug.Log("Numero flotante convertido a cadena con cuatro decimales de precision:" + cadenaConPrecision);
+
+        string nombreCompleto = "JavierdeJesusPerezCastañeda";
+        string primerNombre = nombreCompleto.Substring(0, 6);
+        string segundoNombre = nombreCompleto.Substring(6, 15);
+        string apellidos = nombreCompleto.Substring(21);
+        Debug.Log("Primer Nombre:" + primerNombre);
+        Debug.Log("Segundo Nombre:" + segundoNombre);
+        Debug.Log("Apellidos:" + apellidos);
+
+        string nombreCompleto2 = "Javier de Jesus Perez Castañeda";
+        string[] partes = nombreCompleto2.Split(' ');
+        foreach (string parte in partes)
+        {
+            Debug.Log("Parte:" + parte);
+        }
+
+
+
+
+
+
 
 
     }
@@ -68,7 +82,7 @@ public class EjerciciosVariablesMod8 : MonoBehaviour
         Debug.Log("El valor actual de la variable es: " + miVariable1);
 
         int numero = 8;
-        if (numero % 2 == 0)
+        if (numero % 2 == 0) 
         {
             Debug.Log(numero + "es un numero par.");
             gameObject.GetComponent<Renderer>().material.color = Color.blue;
