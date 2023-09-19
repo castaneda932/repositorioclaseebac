@@ -61,6 +61,48 @@ public class EjerciciosVariablesMod8 : MonoBehaviour
             Debug.Log("Parte:" + parte);
         }
 
+        string valor1 = "4000";
+        string valor2 = "7000";
+        int numerico1;
+        int numerico2;
+        bool exito1 = int.TryParse(valor1, out numerico1);
+        bool exito2 = int.TryParse(valor2, out numerico2);
+        if (exito1 && exito2)
+        {
+            int resultado = numerico1 + numerico2;
+            Debug.Log("El resultado de la operacion es:" + resultado);
+        }
+        else
+        {
+            Debug.Log("Error al convertir los valores a numericos.");
+        }
+
+        string oracion = "Quiero Desarrollar";
+        for (int i = 0; i < oracion.Length; i++)
+        {
+            if (i % 2 == 0)
+            {
+                Debug.Log(oracion[i]);
+            }
+
+        }
+
+        string oracion2 = "Quiero vacaciones";
+        if (oracion2.Length > 5)
+        {
+            string nuevaOracion = oracion.Substring(5);
+            Debug.Log(nuevaOracion);
+        }
+        
+        
+
+
+
+
+
+
+
+
 
 
 
