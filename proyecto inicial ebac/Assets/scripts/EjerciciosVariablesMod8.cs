@@ -9,6 +9,8 @@ public class EjerciciosVariablesMod8 : MonoBehaviour
 
     public GameObject GameObject;
 
+    public GameObject cubo;
+
 
    
 
@@ -16,6 +18,13 @@ public class EjerciciosVariablesMod8 : MonoBehaviour
 
     private void Start()
     {
+        float numeroFlotante = 3.14161516145f;
+        string cadenaConPrecision = numeroFlotante.ToString("F4");
+        Debug.Log("Numero flotante convertido a cadena con cuatro decimales de precision:" + cadenaConPrecision);
+
+
+
+
         float variable1 = 10.5f;
         float variable2 = 3.75f;
 
@@ -24,6 +33,25 @@ public class EjerciciosVariablesMod8 : MonoBehaviour
 
         Debug.Log("El resultado en float es:" + resultadoFloat);
         Debug.Log("El resultado en entero (con casting explicito) es:" + resultadoEntero);
+
+        string colorElegido = "amarillo";
+
+        switch (colorElegido)
+        {
+            case "verde":
+                Debug.Log("El objeto elegido es verde");
+                gameObject.GetComponent<Renderer>().material.color = Color.green;
+                break;
+            case "amarillo":
+                Debug.Log("El objeto elegido es amarillo");
+                gameObject.GetComponent<Renderer>().material.color = Color.yellow;
+                break;
+
+
+
+
+
+        }
 
 
     }
