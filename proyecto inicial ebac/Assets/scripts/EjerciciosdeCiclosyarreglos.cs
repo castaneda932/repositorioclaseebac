@@ -30,5 +30,27 @@ public class EjerciciosdeCiclosyarreglos : MonoBehaviour
             Debug.Log("arr2: " + string.Join(", ", arr2));
             Debug.Log("arr3: " + string.Join(", ", arr3));
         }
+
+        string[] palabras = new string[]
+        {
+            "Esto", "es", "muy", "complicado", "de", "hacer"
+        };
+
+        string oracionCompleta = "";
+
+        // Usando un ciclo foreach para concatenar las palabras
+        foreach (string palabra in palabras)
+        {
+            oracionCompleta += palabra + " ";
+        }
+
+        // Imprimir la oración completa en la consola
+        Debug.Log(oracionCompleta);
+
+
+
+
+
+
     }
 }
